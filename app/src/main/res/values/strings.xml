@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DriverRoutes</string>
+    <string name="drivers_label">Drivers</string>
+    <string name="routes_label">Routes</string>
+    <string name="driver_routes_label">Driver Routes</string>
+    <string name="sort_by_last_name">Sort by last name</string>
+    <string name="driver_list_item_name_format">%1$s, %2$s</string>
+    <string name="route_type_list_item">Type: %1$s</string>
+    <string name="drivers_app_bar_title">Drivers</string>
+    <string name="error_message">Error occurred</string>
+    <string name="route_message">Route ID# %1$d selected</string>
+</resources>

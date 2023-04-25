@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentDrivers">
+
+    <fragment
+        android:id="@+id/fragmentDrivers"
+        android:name="com.williams.ui.drivers.DriversFragment"
+        android:label="@string/drivers_label"
+        tools:layout="@layout/fragment_drivers">
+        <action
+            android:id="@+id/action_fragmentDrivers_to_fragmentDriverRoutes"
+            app:destination="@id/fragmentDriverRoutes">
+            <argument
+                android:name="driverId"
+                android:defaultValue="0"
+                app:argType="integer" />
+            <argument
+                android:name="driverName"
+                android:defaultValue=""
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentDriverRoutes"
+        android:name="com.williams.ui.routes.DriverRoutesFragment"
+        android:label="@string/driver_routes_label"
+        tools:layout="@layout/fragment_driver_routes">
+        <argument
+            android:name="driverId"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="driverName"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+
+</navigation>
